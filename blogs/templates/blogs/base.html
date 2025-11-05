@@ -1,4 +1,6 @@
 <p>
+    <a href="{% url 'blogs:index' %}">Blogs home</a>
+  -
     <a href="{% url 'blogs:blogs' %}">Blogs list</a>
     {% if user.is_authenticated %}
         Hello, {{ user.username }}

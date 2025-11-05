@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py", // 1. Path to manage.py
+            "args": [
+                "runserver", // 2. The Django command to run
+                "--noreload", // 3. IMPORTANT: Prevents the Django reloader from interfering
+                "--nothreading" // Optional: Can sometimes help with stability
+            ],
+            "django": true, // Tells the debugger it's a Django project
+            "justMyCode": true,
+        }
+    ]
+}

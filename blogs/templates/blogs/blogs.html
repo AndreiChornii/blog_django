@@ -8,7 +8,7 @@
             <p><a href="{% url 'blogs:edit_blog' blog.id %}">Edit blog</a></p>
             <p><a href="{% url 'blogs:delete_blog' blog.id %}">Delete blog</a></p>
         {% empty %}
-            <li>No posts available yet</li>
+            <li>No blogs available yet</li>
         {% endfor %}
     </ul>
     <a href="{% url 'blogs:new_blog' %}">Add a new blog</a>
